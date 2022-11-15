@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans&display=swap');
+:root{
+   --color-TextVDblue:hsl(238 29% 16%);
+   --color-TextSred:hsl(14 88% 65%);
+   --color-BgSblue:hsl(240 73% 65%);
+   --color-BgSViolet: hsl(273 75% 66%);
+   --color-textVdarkgray:hsl(237 12% 33%);
+   --color-textGrayblue:hsl(250 6% 50%);
+   --color-dividers:hsl(240 5% 91%); 
+}
+*{
+    color:var(--color-TextVDblue);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+body{
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(0deg, hsl(240 73% 65%) 30%, hsl(273 75% 66%) 70%);
+
+}
+#cubo{
+    position: relative;
+    z-index: 3;
+    left: 222px;
+    top:42px;
+}
+main{
+    width: 922px;
+    height: 508px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.219);
+    overflow: hidden;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: left -430px top -200px;
+    margin:0 auto;
+    display: inline-block;
+}
+#Woman{
+    margin-left: -80px;
+    margin-top: 75px;
+}
+h1{
+    font-size: 30px;
+    margin-left:550px;
+    margin-top:-380px;
+
+}
+div{
+    line-height: 20px;
+    width: 300px;
+    margin-left:550px;
+    margin-top:50px;
+    
+
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+   cursor: pointer;
+   color:var(--color-TextSred) 
+}
+section img{
+    float: right;
+}
+
+section p{
+    max-height: 0;
+    overflow: hidden;
+}
+section:target p{
+    max-height: 40px;
+    color: var(--color-textGrayblue);
+    font-weight: 400;
+}
+section:target img{
+    transform: rotate(180deg);
+}
+section:target a{
+    font-weight: bold;
+}
+hr{
+    color: var(--color-dividers);
+}
+@media all and (max-width:599px){
+
+main{
+    width: 330px;
+    height: 530px;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: 80%;
+    margin-left: 100px;
+    background-position: top 0px left 20px;
+    overflow:visible
+}
+#cubo{
+    display: none;
+}
+#Woman{
+    margin-top:-110px;
+    margin-left: 40px;
+}
+h1{
+margin-top:60px;
+margin-left: 120px;
+}
+div{
+    margin: 0 auto;
+}
+}
