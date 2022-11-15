@@ -25,8 +25,8 @@ body{
 #cubo{
     position: relative;
     z-index: 3;
-    left: 222px;
-    top:42px;
+    left: 260px;
+    top:45px;
 }
 main{
     width: 922px;
@@ -43,8 +43,8 @@ main{
     display: inline-block;
 }
 #Woman{
-    margin-left: -80px;
-    margin-top: 75px;
+    margin-left: -85px;
+    margin-top: 70px;
 }
 h1{
     font-size: 30px;
